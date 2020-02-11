@@ -1,0 +1,67 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: normal 100% sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: baseline;
+}
+
+.box__link {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.box__player {
+  border: 3px solid #fff;
+  padding: 16px;
+  text-align: center;
+  background: #ffc835;
+  color: #2e2240;
+  font-weight: bold;
+  font-size: 20px;
+  width: 400px;
+}
+
+.box__winner {
+    background: white;
+    font-size: 40px;
+    line-height: 2.2;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+
