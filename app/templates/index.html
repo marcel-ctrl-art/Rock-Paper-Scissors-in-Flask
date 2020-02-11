@@ -2,11 +2,9 @@
 {% block content %}
 <form action="\winner" method="POST" novalidate>
   {{ form.hidden_tag() }}
-  <p>
-    {{ form.choice.label }}
-    {{ form.choice }}
-    {{ form.submit() }}
-  </p>
+  <div>{{ form.choice.label }}</div>
+  <div>{{ form.choice }}</div>
+  <div>{{ form.submit() }}</div>
 </form>
 <h2>{{ choice }}</h2>
 {% endblock content %}

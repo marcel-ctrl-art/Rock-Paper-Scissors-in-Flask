@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-human: {{ human }}<br>
-computer: {{ computer }}<br>
-{{ winner }}
+<div class="box">
+  <div class="box__player">You: {{ human }}</div>
+  <div class="box__player">Me: {{ computer }}</div>
+</div>
+<hr>
+<div class="box__winner">{{ winner }}</div>
+<hr>
+<div class="box__link">
+  <a href="{{ url_for('index') }}">Play again</a>
+</div>
+
 {% endblock %}
