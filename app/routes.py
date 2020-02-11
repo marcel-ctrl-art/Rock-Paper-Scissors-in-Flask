@@ -1,6 +1,7 @@
 from app import app
 from app.forms import GameForm
 from flask import request, render_template
+import random
 
 
 def ways_to_win(human, computer):
@@ -11,13 +12,13 @@ def ways_to_win(human, computer):
         return 'computer is a winner'
 
     elif human == 'paper' and computer == 'rock':
-        return 'human is kkkkkthe winner'
+        return 'human is the winner'
 
     elif human == 'scissors' and computer == 'paper':
         return 'human is the winner'
 
     elif human == 'scissors' and computer == 'rock':
-        return 'compuuuuuter is the winner'
+        return 'computer is the winner'
 
     elif human == 'rock' and computer == 'paper':
         return 'computer is the winner'
